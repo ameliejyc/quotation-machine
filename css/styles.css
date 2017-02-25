@@ -1,0 +1,84 @@
+.container-fluid {
+  text-align: center;
+  color: #ffecdb;
+  margin: 3% auto;
+}
+
+#grad {
+  background: linear-gradient(to bottom right, #fa2031, #faee96);
+}
+
+.button {
+  background-color: #fff5ef;
+  border: 1.5px solid #fa2031;
+  color: #fa2031;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: 'Amatic SC', cursive;
+  margin: 20px 3px;
+}
+
+.button:hover {
+  background-color: #fcd8c2;
+  /*cream*/
+}
+
+p {
+  font-size: 2em;
+  font-family: 'Sacramento', cursive;
+  margin: 2%;
+}
+
+h1 {
+  font-size: 6em;
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  color: #fa2031;
+  font-size: 0.8em;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffecdb;
+}
+
+#quoteSection {
+  border-radius: none;
+  position: relative;
+  margin: auto;
+  width: 80%;
+  padding: 20px 45px;
+  display: table;
+  background-color: #ffecdb;
+  border-radius: 10px;
+}
+
+#quote {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  clear: both;
+  font-size: 2.5em;
+  color: #1e1916;
+}
+
+#author {
+  width: 100%;
+  height: auto;
+  clear: both;
+  font-size: 1.5em;
+  text-align: right;
+  color: #fa2031
+}
