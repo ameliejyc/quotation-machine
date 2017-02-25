@@ -4,7 +4,7 @@ $(document).ready(function() {
 var randomQuote;
 var author;
 function getQuote(){
- var url = "http://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=?&lang=en";
+ var url = "https://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=?&lang=en";
  $.getJSON(url, function(data){
    if (data.quoteAuthor === '') {
    data.quoteAuthor = 'Unknown';
