@@ -3,21 +3,25 @@ $(document).ready(function() {
 
 function getQuote(){
  var url = "https://cors-anywhere.herokuapp.com/http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en";
- $.getJSON(url, function(data){
-   if (data.quoteAuthor === '') {
-   data.quoteAuthor = 'Unknown';
- }
-   $("#quote").html('"'+data.quoteText+'"');
-   $("#author").html("-"+data.quoteAuthor);
- });
-};
 
- $("#newQuote").on("click", function(){
+ $.getJSON(url, function(data){
+   var quote = data.quoteText;
+   var author = data.quoteAuthor;
+   if (author === '') {
+   author = 'Unknown';
+ }
+
+  $("#quote").html('"' + quote + '"');
+  $("#author").html("- " + author);
+  $("#newQuote").on("click", function(){
    getQuote();
  });
-  
- $("#tweet").on("click", function(){
-window.open("https://twitter.com/intent/tweet?text=");
+  $("#tweet").on("click", function(){
+window.open("https://twitter.com/intent/tweet?text="+ quote + ' - ' + author);
  });
-  
+
+});
+
+};
+
 });
